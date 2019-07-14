@@ -3,7 +3,7 @@
 龙晨宇
 
 ##spring boot 的官网
-https://spring.io
+https://spring.io/
 
 ##b站视频的网址（码匠笔记）
 https://www.bilibili.com/video/av50200264/

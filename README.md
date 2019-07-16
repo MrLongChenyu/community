@@ -13,7 +13,7 @@
  
  [OkHttp](https://square.github.io/okhttp/)
  
- [mven仓库](https://mvnrepository.com/)
+ [Maven仓库](https://mvnrepository.com/)
 ## b站视频（码匠笔记）
 https://www.bilibili.com/video/av50200264/
 

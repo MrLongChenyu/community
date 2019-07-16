@@ -1,6 +1,7 @@
 package com.longchenyu.community.controller;
 
 import com.longchenyu.community.dto.AccessTokenDTO;
+import com.longchenyu.community.dto.GitHubUser;
 import com.longchenyu.community.provider.GitHubProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,7 +21,9 @@ public class AuthorizeController {
         accessTokenDTO.setCode(code);
         accessTokenDTO.setRedirect_uri("http://localhost:8887/callback");
         accessTokenDTO.setState(state);
-        gitHubProvider.getAccessToken(accessTokenDTO);
+        String accessToken = gitHubProvider.getAccessToken(accessTokenDTO);
+        GitHubUser user = gitHubProvider.getUser(accessToken);
+        System.out.println(user.getName());
         return "index";
     }
 }
